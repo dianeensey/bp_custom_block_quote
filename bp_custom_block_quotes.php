@@ -6,15 +6,21 @@ Description: Replaces a shortcode with a formatted blockquote.  Use the followin
 Version: 1.0
 Author: Diane Ensey
 Author URI: www.beyond-paper.com
-/*/
+Copyright 2014  Diane Ensey  (email : diane@beyond-paper.com)
 
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License, version 2, as 
+    published by the Free Software Foundation.
 
-/**
- * Customized Blockquotes is a plugin for WordPress 3.0.5
- * It was created by Diane Ensey (diane@beyond-paper.com.com) using CSS by CoDrops (http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
- * Free for personal use. Any distribution, copy, resell, rent or related action is allowed only you use a backlink to http://www.beyond-paper.com
-**/
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
 
 /**
  * 1. WP path definitions ----------------------------------------------------------------->
@@ -55,11 +61,12 @@ class BPcb {
 ** Format is 
 ** [quote style = 'leather' image="theimage.jpg" title="the title" source="the_source.html" author="The Author"]The Quotation Body[/quote]
 ** styles:
-** 		leather
-** 
-** 
-** 
-** 
+** 		leather ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
+**      swoosh ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
+**      balloon ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
+**      vinyl ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
+**      polaroid ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
+**      playbill ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/) 
 */
 function bp_custom_block_quote($atts, $content = null) {
    extract(shortcode_atts(array(

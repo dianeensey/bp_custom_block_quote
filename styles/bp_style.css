@@ -10,7 +10,11 @@
 	font-style: normal;
 }
 
-/* Let's set and reset some common styles */
+/* Let's set and reset some common styles 
+*  Base style inspiration by CoDrops: 
+*  http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/
+*/
+*/
 .bp-wrap {
 	width: 300px;
 	margin: 20px auto;
@@ -36,7 +40,9 @@
 
 /* CUSTOM STYLES */
 
-/* leater */
+/* leather 
+*   ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
+*/
 .leather {
 	background: url('../../images/dark_leather.jpg') repeat top left #363738;	
 	margin-top: 100px;
@@ -119,4 +125,374 @@
 
 .leather cite a:hover{
 	text-shadow: 2px 2px 3px rgba(0,0,0,0.9)
+}
+
+
+/* swoosh 
+*   ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
+*/
+
+.swoosh div.blockquote{
+    padding-top: 150px;
+}
+.swoosh div.blockquote:after {
+    font-family: 'icons';
+    background: rgba(235,150,108,0.8);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    content: '\275e'; 
+    position: absolute;
+    font-size: 70px;
+    line-height: 130px;
+    text-align: center;
+    top: 0px;
+    left: 50%;
+    margin-left: -65px;
+    color: rgba(255,255,255,0.5);
+    text-shadow: 0 1px 1px rgba(255,255,255,0.1);
+}
+.swoosh div.blockquote:before{
+    content: '';
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border-left: 5px solid rgba(235,150,108,0.1);
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    z-index: -1;
+}
+.swoosh div.blockquote p {
+    font-family: Baskerville, Georgia, serif;
+    font-size: 28px;
+    font-style: italic;
+    background: rgba(255,255,255,0.5);
+    display: inline;
+    color: rgba(235,150,108,0.8);
+    text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+    line-height: 46px;
+    box-shadow: 0 -6px 0 rgba(235,150,108,0.2);
+}
+.swoosh .bp-attribution {
+    text-align: right;
+}
+ 
+.swoosh .bp-author{
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: #d48158;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.1);
+}
+ 
+.swoosh cite a{
+    color: #d7aa94;
+    font-style: italic;
+}
+ 
+.swoosh cite a:hover{
+    color: #d48158;
+}
+
+/* balloon 
+*   ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
+*/
+
+.balloon {
+    width: 500px;
+}
+ 
+.balloon div.blockquote{
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 
+        inset 0 2px 0 rgba(188, 147, 200, 0.7), 
+        -5px -4px 25px rgba(0, 0, 0, 0.3);
+}
+.balloon div.blockquote:after, 
+.balloon div.blockquote:before  {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+ 
+.balloon div.blockquote:after  {
+    border-top-color: #ffffff;
+    border-width: 10px;
+    left: 65%;
+    margin-left: -10px;
+}
+ 
+.balloon div.blockquote:before {
+    border-top-color: rgba(0,0,0,0.01);
+    border-width: 11px;
+    left: 65%;
+    margin-left: -11px;
+}
+.balloon div.blockquote p {
+    font-family: 'Alegreya', serif;
+    font-size: 24px;
+    color: #b4b4b4;
+    font-weight: 400;
+    line-height: 40px;
+    font-style: italic;
+    text-indent: 100px;
+    position: relative;
+}
+.balloon div.blockquote p:before{
+    content: '\201C';
+    font-family: serif;
+    font-style: normal;
+    font-weight: 700;
+    position: absolute;
+    font-size: 175px;
+    top: 0px;
+    left: -105px;
+    color: rgba(188, 147, 200, 1);
+    text-shadow: 7px 14px 10px rgba(0, 0, 0, 0.1);
+}
+.balloon .bp-attribution {
+    text-align: right;
+    padding: 20px 100px 20px 20px;
+    position: relative;
+}
+.balloon .bp-thumb {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    background: url(../images/bronte.jpg) no-repeat center center;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    box-shadow: 
+        inset 1px 1px 4px rgba(0,0,0,0.5),
+        0 2px 3px rgba(0,0,0,0.6);
+}
+.balloon .bp-author{
+    font-family: 'Alegreya SC', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(188, 147, 200, 1);
+    text-shadow: 0 1px 1px rgba(255,255,255,0.7);
+}
+ 
+.balloon cite a{
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+ 
+.balloon cite a:hover{
+    color: rgba(188, 147, 200, 1);
+    text-shadow: 0 1px 1px rgba(255,255,255,0.7);
+}
+
+/* playbill 
+*   ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
+*/
+.playbill {
+    width: 600px;
+    padding: 20px 240px 50px 20px;
+    background: #444 url(../images/dickens.jpg) no-repeat 140% 25%;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
+}
+.playbill div.blockquote p {
+    color: rgba(255,255,255,0.95);
+    font-size: 21px;
+    line-height: 26px;
+    text-align: right;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.playbill div.blockquote p span {
+    font-weight: 700;
+    color: #fcf779;
+    font-size: 58px;
+    line-height: 58px;
+    display: block;
+    padding: 10px;
+    text-shadow: 7px 7px 2px rgba(0,0,0,0.2);
+    transform: rotate(-7deg) translateY(10px);
+}
+.playbill div.blockquote p span:before {
+    font-family: 'icons';
+    content: '\275d'; 
+    font-weight: normal;
+    opacity: 0.1;
+    font-size: 136px;
+    position: absolute;
+    color: #fff;
+    top: -50px;
+    left: -25px;
+    transform: rotate(45deg);
+}
+.playbill .bp-attribution {
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #222;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    padding: 30px;
+    transform: rotate(-40deg) translate(175px, 110px);
+}
+.playbill .bp-author:before {
+    content: '\2014';
+    padding-right: 4px;
+}
+ 
+.playbill .bp-attribution cite a{
+    color: #777;
+}
+ 
+.playbill .bp-attribution cite a:hover{
+    color: #fcf779;
+}
+
+/* vinyl 
+*   ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
+*/
+.vinyl {
+    width: 390px;
+}
+ 
+.vinyl div.blockquote {
+    text-align: center;
+    background: #333;
+    width: 350px;
+    height: 350px;
+    padding: 60px;
+    border-radius: 50%;
+    box-shadow: 
+        inset 0 0 0 10px #333, 
+        inset 0 0 0 12px rgba(255,255,255,0.6), 
+        80px 0 0 rgba(255,255,255,0.3),
+        -80px 0 0 rgba(255,255,255,0.3),
+        50px 0 0 rgba(60,185,145,0.2),
+        -50px 0 0 rgba(185,60,60,0.2);
+}
+.vinyl div.blockquote p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 25px;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px #fff, 0 1px 1px #000;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+.vinyl div.blockquote p span {
+    display: block;
+    position: relative;
+    padding-top: 40px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+.vinyl div.blockquote p span:before {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    content: "\275d";
+    font-size: 40px;
+    color: #333;
+    top: 0px;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    border-radius: 50%;
+}
+.vinyl .bp-attribution {
+    text-align: center;
+    font-family: 'Annie Use Your Telescope', cursive;
+    padding: 20px;
+    font-size: 16px;
+}
+.vinyl cite a:hover{
+    color: #000;
+}
+
+/* polaroid 
+*   ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
+*/
+.polaroid {
+    width: 350px;
+    height: 400px;
+    background: #fff;
+    border-radius: 4px;
+}
+/* Shadow style from Nicolas Gallagher: http://nicolasgallagher.com/css-drop-shadows-without-images/demo/ */
+.polaroid:before, 
+.polaroid:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    transform: rotate(-3deg);
+    bottom: 15px;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    height: 20%;
+    left: 10px;
+    max-height: 100px;
+    max-width: 300px;
+    width: 50%;
+}
+.polaroid:after {
+    transform: rotate(3deg);
+    left: auto;
+    right: 10px;
+}
+.polaroid div.blockquote{
+    background: #333;
+    height: 75%;
+    padding: 30px;
+    text-align: center;
+}
+.polaroid div.blockquote:before{
+    color: rgba(255,255,255,0.2);
+    position: absolute;
+    content: '\0022';
+    font-size: 150px;
+    line-height: 130px;
+    font-style: italic;
+    top: 0px;
+    right: 20px;
+    font-family: Cambria, Georgia, serif;
+}
+.polaroid div.blockquote p {
+    color: #fff;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px #000;
+}
+.polaroid .bp-attribution {
+    padding: 20px;
+}
+.polaroid .bp-author {
+    font-size: 24px;
+    font-family: 'Dr Sugiyama', cursive;
+    -moz-transform: rotate(-4deg);
+    color: #070d5f;
+}
+.polaroid cite a{
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+.polaroid cite a:hover{
+    color: #000;
 }
