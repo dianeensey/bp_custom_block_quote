@@ -76,8 +76,8 @@ function bp_custom_block_quote($atts, $content = null) {
       "source" => ' ',
       "author" => 'Unknown'
    ), $atts));
-   return '<div class="bp-wrap '.$style.'">
-		<div class="bp-thumb" style="background-image:url('.$image.')"></div>
+   return '<div class="'.$style.' bp-wrap">
+		<div class="bp-thumb" data-image="'.$image.'" style="background:url('.$image.') no-repeat center center"></div>
 		<div class="blockquote" cite="'.$source.'"><p>'.$content.'</p></div>
 		<div class="bp-attribution">
 		<p class="bp-author">'.$author.'</p>
