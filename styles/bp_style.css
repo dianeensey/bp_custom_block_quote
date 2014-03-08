@@ -307,6 +307,67 @@
     text-shadow: 0 1px 1px rgba(255,255,255,0.7);
 }
 
+/* polaroid 
+*   ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
+*/
+.polaroid {
+    width: 350px;
+    height: 400px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-ms-transform: rotate(-3deg); /* IE 9 */
+	-webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+    transform: rotate(-3deg);
+}
+.polaroid div.blockquote{
+    background: #333;
+    height: 75%;
+    padding: 30px;
+    text-align: center;
+}
+.polaroid div.blockquote:before{
+    color: rgba(255,255,255,0.1);
+    position: relative;
+	float: right;
+    content: '\0022';
+    font-size: 150px;
+    line-height: 65px;
+    font-style: italic;
+    font-family: Cambria, Georgia, serif;
+	-ms-transform: rotate(-3deg); /* IE 9 */
+	-webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+    transform: rotate(-3deg);
+}
+.polaroid div.blockquote p {
+    color: #fff;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px #000;
+}
+.polaroid .bp-attribution {
+    padding: 0 20px 20px 20px;
+}
+.polaroid .bp-author {
+    font-size: 24px;
+    font-family: 'Dr Sugiyama', cursive;
+	-ms-transform: rotate(-4deg); /* IE 9 */
+	-webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
+    -moz-transform: rotate(-4deg);
+    color: #070d5f;
+}
+.polaroid cite a{
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+.polaroid cite a:hover{
+    color: #000;
+}
+
+/** Problems with formatting **/
+
 /* playbill 
 *   ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
 */
@@ -437,76 +498,5 @@
     font-size: 16px;
 }
 .vinyl cite a:hover{
-    color: #000;
-}
-
-/* polaroid 
-*   ( CSS credit to CoDrops: http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/)
-*/
-.polaroid {
-    width: 350px;
-    height: 400px;
-    background: #fff;
-    border-radius: 4px;
-}
-/* Shadow style from Nicolas Gallagher: http://nicolasgallagher.com/css-drop-shadows-without-images/demo/ */
-.polaroid:before, 
-.polaroid:after {
-    content: "";
-    position: absolute;
-    z-index: -2;
-    transform: rotate(-3deg);
-    bottom: 15px;
-    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-    height: 20%;
-    left: 10px;
-    max-height: 100px;
-    max-width: 300px;
-    width: 50%;
-}
-.polaroid:after {
-    transform: rotate(3deg);
-    left: auto;
-    right: 10px;
-}
-.polaroid div.blockquote{
-    background: #333;
-    height: 75%;
-    padding: 30px;
-    text-align: center;
-}
-.polaroid div.blockquote:before{
-    color: rgba(255,255,255,0.2);
-    position: absolute;
-    content: '\0022';
-    font-size: 150px;
-    line-height: 130px;
-    font-style: italic;
-    top: 0px;
-    right: 20px;
-    font-family: Cambria, Georgia, serif;
-}
-.polaroid div.blockquote p {
-    color: #fff;
-    font-family: 'Abril Fatface', sans-serif;
-    font-size: 24px;
-    text-shadow: 1px 1px 1px #000;
-}
-.polaroid .bp-attribution {
-    padding: 20px;
-}
-.polaroid .bp-author {
-    font-size: 24px;
-    font-family: 'Dr Sugiyama', cursive;
-    -moz-transform: rotate(-4deg);
-    color: #070d5f;
-}
-.polaroid cite a{
-    color: #999;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 12px;
-}
-.polaroid cite a:hover{
     color: #000;
 }
